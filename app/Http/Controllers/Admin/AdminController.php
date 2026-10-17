@@ -7,6 +7,7 @@ use App\Models\Lead;
 use App\Models\Property;
 use App\Models\Transaction;
 use App\Models\User;
+use Illuminate\Http\Request;              
 use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
@@ -70,12 +71,20 @@ class AdminController extends Controller
     }
 
     // ===== LISTA DE USUÁRIOS (APENAS ATIVOS) =====
-    public function users()
+    public function users(Request $request)
     {
-        $users = User::withCount('properties')
-            ->latest()
-            ->paginate(20);
+        $query = User::withCount('properties')->latest();
 
+        if ($request->filled('q')) {
+            $term = $request->q;
+            $query->where(function ($q) use ($term) {
+                $q->where('name', 'like', "%{$term}%")
+                ->orWhere('email', 'like', "%{$term}%")
+                ->orWhere('phone', 'like', "%{$term}%");
+            });
+        }
+
+        $users = $query->paginate(20);
         return view('admin.users', compact('users'));
     }
 
