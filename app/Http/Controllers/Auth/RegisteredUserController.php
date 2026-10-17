@@ -45,7 +45,7 @@ class RegisteredUserController extends Controller
             'phone' => $request->phone,
             'password' => Hash::make($request->password),
             'slug' => $this->generateUniqueSlug($request->name),
-            'plan_type' => 'free',
+            'plan_type' => 'essencial',
         ]);
 
         event(new Registered($user));
