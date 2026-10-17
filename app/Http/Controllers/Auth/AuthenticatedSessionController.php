@@ -12,11 +12,17 @@ use Illuminate\View\View;
 
 class AuthenticatedSessionController extends Controller
 {
+    /**
+     * Display the login view.
+     */
     public function create(): View
     {
         return view('auth.login');
     }
 
+    /**
+     * Handle an incoming authentication request.
+     */
     public function store(LoginRequest $request): RedirectResponse
     {
         $request->authenticate();
@@ -29,9 +35,13 @@ class AuthenticatedSessionController extends Controller
             'user_agent' => $request->userAgent(),
         ]);
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        // CORRIGIDO: rota correta é 'dashboard.index'
+        return redirect()->intended(route('dashboard.index', absolute: false));
     }
 
+    /**
+     * Destroy an authenticated session.
+     */
     public function destroy(Request $request): RedirectResponse
     {
         Log::channel('auth')->info('Logout realizado', [
@@ -40,6 +50,7 @@ class AuthenticatedSessionController extends Controller
         ]);
 
         Auth::guard('web')->logout();
+
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 

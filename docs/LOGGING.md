@@ -1,8 +1,8 @@
-# Sistema de Logging e Monitoramento - LeadEngine
+# Sistema de Logging e Monitoramento - Larnex
 
 ## Visão Geral
 
-O LeadEngine utiliza o *Monolog* (nativo do Laravel) com *5 canais personalizados*, cobrindo requisitos de segurança, performance e rastreabilidade (PBE).
+O Larnex utiliza o *Monolog* (nativo do Laravel) com *5 canais personalizados*, cobrindo requisitos de segurança, performance e rastreabilidade (PBE).
 
 ## Canais de Log
 

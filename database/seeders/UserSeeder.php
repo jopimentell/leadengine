@@ -12,11 +12,11 @@ class UserSeeder extends Seeder
     {
         // ADMIN – plano mais alto
         User::firstOrCreate(
-            ['email' => 'admin@leadengine.com'],
+            ['email' => 'admin@larnex.com'],
             [
                 'id' => (string) Str::uuid(),
-                'name' => 'Admin LeadEngine',
-                'slug' => 'admin-leadengine',
+                'name' => 'Admin Larnex',
+                'slug' => 'admin-larnex',
                 'phone' => '5511999999999',
                 'password' => bcrypt('password'),
                 'plan_type' => 'performance', // <-- ERA 'black'

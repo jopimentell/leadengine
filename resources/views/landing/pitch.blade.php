@@ -351,7 +351,7 @@
           <div class="price">R$ 0</div>
           <ul>
             <li><i class="fa-solid fa-check"></i> 1 imóvel</li>
-            <li><i class="fa-solid fa-check"></i> Marca LeadEngine</li>
+            <li><i class="fa-solid fa-check"></i> Marca Larnex</li>
             <li><i class="fa-solid fa-xmark" style="color:#cf202f;"></i> Sem IA</li>
             <li><i class="fa-solid fa-xmark" style="color:#cf202f;"></i> Sem WhatsApp</li>
           </ul>
