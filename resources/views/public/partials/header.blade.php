@@ -3,7 +3,7 @@
         <div class="flex items-center justify-between h-16">
 
             <!-- LOGO -->
-            <a href="/" class="flex items-center gap-2 font-display font-semibold text-xl text-ink">
+            <a href="/" class="flex items-center gap-0 font-display font-semibold text-xl text-ink">
                 <span class="text-primary">Lar</span>nex
             </a>
 

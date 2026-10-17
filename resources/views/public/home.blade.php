@@ -24,13 +24,17 @@
                     Simples, rápido e feito para corretores.
                 </p>
                 <div class="flex flex-wrap gap-3 mt-6">
-                    <a href="{{ route('register') }}" class="bg-primary text-white rounded-pill px-8 py-4 text-base font-semibold hover:bg-primary-active transition-soft shadow-soft">
-                        <i class="fa-solid  fa-circle-check mr-2"></i> Começar grátis
-                    </a>
-                    <a href="#recursos" class="bg-white text-ink rounded-pill px-8 py-4 text-base font-semibold border border-hairline hover:bg-gray-50 transition-soft">
-                        <i class="fa-solid  fa-circle-play mr-2"></i> Ver recursos
-                    </a>
-                </div>
+                <a href="{{ route('register') }}" class="bg-primary text-white rounded-pill px-8 py-4 text-base font-semibold hover:bg-primary-active transition-soft shadow-soft">
+                    <i class="fa-regular fa-circle-check mr-2"></i> Começar grátis
+                </a>
+                <a href="#recursos" class="bg-white text-ink rounded-pill px-8 py-4 text-base font-semibold border border-hairline hover:bg-gray-50 transition-soft">
+                    <i class="fa-regular fa-circle-play mr-2"></i> Ver recursos
+                </a>
+                {{-- 👇 BOTÃO "VER DEMO" ADICIONADO --}}
+                <a href="{{ url('/joao-silva') }}" target="_blank" class="w-100 bg-surface-strong text-ink rounded-pill px-8 py-4 text-base font-semibold hover:bg-gray-200 transition-soft">
+                    <i class="fa-solid fa-eye mr-2"></i> Ver demo
+                </a>
+            </div>
                 <p class="text-muted text-sm mt-4">
                     <i class="fa-solid  fa-circle-check text-semantic-up mr-1"></i> Sem cartão de crédito. Grátis por 30 dias.
                 </p>
@@ -68,6 +72,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <!-- Elemento decorativo -->
                 <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl -z-10"></div>

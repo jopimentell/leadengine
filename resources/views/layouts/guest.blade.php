@@ -56,7 +56,7 @@
     <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
         <!-- Logo -->
         <a href="/" class="text-2xl font-bold text-ink mb-8">
-            Lead<span class="text-primary">Engine</span>
+            Lar<span class="text-primary">nex</span>
         </a>
 
         <!-- Conteúdo principal -->
