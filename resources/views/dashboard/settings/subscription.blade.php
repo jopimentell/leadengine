@@ -55,7 +55,7 @@
         @else
             <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-sm">
                 <p class="text-yellow-700">
-                    <i class="fa-regular fa-triangle-exclamation mr-1"></i>
+                    <i class="fa-solid fa-triangle-exclamation mr-1"></i>
                     Você está no período de teste. Após os 7 dias, escolha um plano para continuar.
                 </p>
             </div>

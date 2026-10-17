@@ -32,7 +32,7 @@
                             </div>
                         @empty
                             <div class="swiper-slide h-80 md:h-[450px] bg-gray-200 flex items-center justify-center text-gray-400">
-                                <i class="fa-regular fa-image text-6xl"></i>
+                                <i class="fa-solid fa-image text-6xl"></i>
                             </div>
                         @endforelse
                     </div>
@@ -158,7 +158,7 @@
 
                         <button type="submit" class="w-full bg-primary text-white rounded-pill py-3 text-sm font-semibold hover:bg-primary-active transition-soft">
                             <span x-text="loading ? 'Enviando...' : 'Enviar interesse'"></span>
-                            <i class="fa-regular fa-paper-plane ml-2"></i>
+                            <i class="fa-solid fa-paper-plane ml-2"></i>
                         </button>
 
                         <p class="text-xs text-muted text-center mt-2">Seus dados serão compartilhados apenas com o corretor.</p>
@@ -166,7 +166,7 @@
 
                     @if(session('success'))
                         <div class="mt-4 bg-semantic-up/10 text-semantic-up text-sm rounded-pill px-4 py-3 text-center border border-semantic-up/20">
-                            <i class="fa-regular fa-circle-check mr-1"></i> {{ session('success') }}
+                            <i class="fa-solid fa-circle-check mr-1"></i> {{ session('success') }}
                         </div>
                     @endif
                 </div>

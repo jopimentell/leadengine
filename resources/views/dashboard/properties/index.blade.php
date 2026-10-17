@@ -6,13 +6,13 @@
 <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
     <h1 class="text-2xl font-bold text-ink">Meus Imóveis</h1>
     <a href="{{ route('dashboard.properties.create') }}" class="bg-primary text-white rounded-pill px-6 py-2.5 text-sm font-semibold hover:bg-primary-active transition-soft">
-        <i class="fa-regular fa-plus mr-1"></i> Novo Imóvel
+        <i class="fa-solid fa-plus mr-1"></i> Novo Imóvel
     </a>
 </div>
 
 @if(session('success'))
     <div class="bg-semantic-up/10 text-semantic-up text-sm rounded-pill px-4 py-3 mb-4 border border-semantic-up/20">
-        <i class="fa-regular fa-circle-check mr-1"></i> {{ session('success') }}
+        <i class="fa-solid fa-circle-check mr-1"></i> {{ session('success') }}
     </div>
 @endif
 
@@ -38,7 +38,7 @@
                                 <img src="{{ $property->images->first()->url }}" alt="{{ $property->title }}" class="w-12 h-12 object-cover rounded-lg">
                             @else
                                 <div class="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400">
-                                    <i class="fa-regular fa-image"></i>
+                                    <i class="fa-solid fa-image"></i>
                                 </div>
                             @endif
                         </td>
@@ -57,15 +57,15 @@
                         <td class="px-4 py-3 text-right">
                             <div class="flex items-center justify-end gap-1">
                                 <a href="{{ route('dashboard.properties.edit', $property->id) }}" class="btn btn-ghost btn-sm text-muted hover:text-ink transition-soft">
-                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
                                 </a>
                                 <a href="{{ route('public.imovel.detalhe', [auth()->user()->slug, $property->slug]) }}" target="_blank" class="btn btn-ghost btn-sm text-muted hover:text-ink transition-soft">
-                                    <i class="fa-regular fa-eye"></i>
+                                    <i class="fa-solid fa-eye"></i>
                                 </a>
                                 <form method="POST" action="{{ route('dashboard.properties.destroy', $property->id) }}" onsubmit="return confirm('Tem certeza que deseja excluir este imóvel?')">
                                     @csrf @method('DELETE')
                                     <button type="submit" class="btn btn-ghost btn-sm text-muted hover:text-semantic-down transition-soft">
-                                        <i class="fa-regular fa-trash-can"></i>
+                                        <i class="fa-solid fa-trash-can"></i>
                                     </button>
                                 </form>
                             </div>

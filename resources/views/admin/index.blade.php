@@ -9,7 +9,7 @@
     <div class="bg-white rounded-xl border border-hairline p-4 shadow-soft">
         <div class="flex items-center justify-between">
             <span class="text-sm text-muted">Corretores</span>
-            <i class="fa-regular fa-users text-primary text-xl"></i>
+            <i class="fa-solid fa-users text-primary text-xl"></i>
         </div>
         <p class="text-2xl font-bold text-ink mt-1 font-mono">{{ $totalUsers }}</p>
         <span class="text-xs text-muted">Total de usuários</span>
@@ -18,7 +18,7 @@
     <div class="bg-white rounded-xl border border-hairline p-4 shadow-soft">
         <div class="flex items-center justify-between">
             <span class="text-sm text-muted">Imóveis</span>
-            <i class="fa-regular fa-building text-primary text-xl"></i>
+            <i class="fa-solid fa-building text-primary text-xl"></i>
         </div>
         <p class="text-2xl font-bold text-ink mt-1 font-mono">{{ $totalProperties }}</p>
         <span class="text-xs text-muted">Total de imóveis</span>
@@ -27,7 +27,7 @@
     <div class="bg-white rounded-xl border border-hairline p-4 shadow-soft">
         <div class="flex items-center justify-between">
             <span class="text-sm text-muted">Leads</span>
-            <i class="fa-regular fa-inbox text-primary text-xl"></i>
+            <i class="fa-solid fa-inbox text-primary text-xl"></i>
         </div>
         <p class="text-2xl font-bold text-ink mt-1 font-mono">{{ $totalLeads }}</p>
         <span class="text-xs text-muted">Total de leads capturados</span>
@@ -36,7 +36,7 @@
     <div class="bg-white rounded-xl border border-hairline p-4 shadow-soft">
         <div class="flex items-center justify-between">
             <span class="text-sm text-muted">Receita (MRR)</span>
-            <i class="fa-regular fa-circle-dollar text-primary text-xl"></i>
+            <i class="fa-solid fa-circle-dollar text-primary text-xl"></i>
         </div>
         <p class="text-2xl font-bold text-ink mt-1 font-mono">R$ {{ number_format($totalRevenue, 2, ',', '.') }}</p>
         <span class="text-xs text-muted">Receita recorrente mensal</span>

@@ -11,7 +11,7 @@
                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 @else
                     <div class="w-full h-full flex items-center justify-center text-gray-400">
-                        <i class="fa-regular fa-image text-4xl"></i>
+                        <i class="fa-solid fa-image text-4xl"></i>
                     </div>
                 @endif
 
@@ -30,13 +30,13 @@
                 <button @click.prevent="toggleFavorite('{{ $imovel->id }}')"
                         class="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white hover:scale-110 transition-all shadow-sm">
                     <i class="fa-heart text-sm transition-colors"
-                       :class="isFavorite('{{ $imovel->id }}') ? 'fa-solid text-semantic-down' : 'fa-regular text-muted'"></i>
+                       :class="isFavorite('{{ $imovel->id }}') ? 'fa-solid text-semantic-down' : 'fa-solid text-muted'"></i>
                 </button>
 
                 {{-- Contador de fotos --}}
                 @if($imovel->images->count() > 1)
                     <span class="absolute bottom-3 right-3 bg-black/60 backdrop-blur text-white text-xs font-medium rounded-pill px-2.5 py-1 flex items-center gap-1">
-                        <i class="fa-regular fa-camera text-[10px]"></i>
+                        <i class="fa-solid fa-camera text-[10px]"></i>
                         {{ $imovel->images->count() }}
                     </span>
                 @endif
@@ -48,7 +48,7 @@
                     {{ $imovel->title }}
                 </h3>
                 <p class="text-muted text-xs mt-1.5 flex items-center gap-1">
-                    <i class="fa-regular fa-location-dot text-[10px]"></i>
+                    <i class="fa-solid fa-location-dot text-[10px]"></i>
                     <span class="truncate">{{ $imovel->neighborhood ?? $imovel->city }}, {{ $imovel->state }}</span>
                 </p>
 
@@ -90,7 +90,7 @@
     @endforeach
 @else
     <div class="col-span-full text-center py-16">
-        <i class="fa-regular fa-house-circle-xmark text-5xl text-gray-300 mb-4 block"></i>
+        <i class="fa-solid fa-house-circle-xmark text-5xl text-gray-300 mb-4 block"></i>
         <h3 class="text-xl font-semibold text-ink">Nenhum imóvel encontrado</h3>
         <p class="text-sm text-muted mt-1 mb-6">Tente ajustar os filtros ou buscar por outro termo.</p>
         <a href="{{ route('public.home', $user->slug) }}"

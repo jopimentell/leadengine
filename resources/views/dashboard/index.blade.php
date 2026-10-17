@@ -8,7 +8,7 @@
     <div class="bg-white rounded-xl border border-hairline p-4 shadow-soft">
         <div class="flex items-center justify-between">
             <span class="text-sm text-muted">Leads (mês)</span>
-            <i class="fa-regular fa-users text-primary text-xl"></i>
+            <i class="fa-solid fa-users text-primary text-xl"></i>
         </div>
         <p class="text-2xl font-bold text-ink mt-1 font-mono">{{ $leadsThisMonth }}</p>
         <span class="text-xs text-muted">Total: {{ $totalLeads }}</span>
@@ -17,7 +17,7 @@
     <div class="bg-white rounded-xl border border-hairline p-4 shadow-soft">
         <div class="flex items-center justify-between">
             <span class="text-sm text-muted">Visualizações</span>
-            <i class="fa-regular fa-eye text-primary text-xl"></i>
+            <i class="fa-solid fa-eye text-primary text-xl"></i>
         </div>
         <p class="text-2xl font-bold text-ink mt-1 font-mono">{{ $totalViews }}</p>
         <span class="text-xs text-muted">Total de visualizações</span>
@@ -26,7 +26,7 @@
     <div class="bg-white rounded-xl border border-hairline p-4 shadow-soft">
         <div class="flex items-center justify-between">
             <span class="text-sm text-muted">Conversão</span>
-            <i class="fa-regular fa-chart-line text-primary text-xl"></i>
+            <i class="fa-solid fa-chart-line text-primary text-xl"></i>
         </div>
         <p class="text-2xl font-bold text-ink mt-1 font-mono">{{ $conversionRate }}%</p>
         <span class="text-xs text-muted">Leads / Visualizações</span>
@@ -35,7 +35,7 @@
     <div class="bg-white rounded-xl border border-hairline p-4 shadow-soft">
         <div class="flex items-center justify-between">
             <span class="text-sm text-muted">Imóveis ativos</span>
-            <i class="fa-regular fa-building text-primary text-xl"></i>
+            <i class="fa-solid fa-building text-primary text-xl"></i>
         </div>
         <p class="text-2xl font-bold text-ink mt-1 font-mono">{{ $activeProperties }}</p>
         <span class="text-xs text-muted">de {{ $totalProperties }} total</span>

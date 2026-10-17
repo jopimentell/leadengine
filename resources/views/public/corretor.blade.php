@@ -15,12 +15,12 @@
     <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-2 flex items-center justify-between">
         <div class="flex items-center gap-4">
             <span class="flex items-center gap-1.5">
-                <i class="fa-regular fa-clock text-[10px]"></i>
+                <i class="fa-solid fa-clock text-[10px]"></i>
                 <span class="hidden sm:inline">Seg–Sex, 8h–18h</span>
                 <span class="sm:hidden">8h–18h</span>
             </span>
             <span class="hidden sm:flex items-center gap-1.5">
-                <i class="fa-regular fa-location-dot text-[10px]"></i>
+                <i class="fa-solid fa-location-dot text-[10px]"></i>
                 {{ $user->city ?? 'Brasil' }}
             </span>
         </div>
@@ -85,7 +85,7 @@
 
                             {{-- Endereço --}}
                             <p class="text-on-dark-soft text-sm mt-3 flex items-center gap-2">
-                                <i class="fa-regular fa-location-dot"></i>
+                                <i class="fa-solid fa-location-dot"></i>
                                 {{ $imovel->neighborhood ?? $imovel->city }}, {{ $imovel->state }}
                             </p>
 
@@ -160,7 +160,7 @@
                     <div class="md:col-span-5">
                         <label class="text-xs font-semibold text-muted uppercase tracking-wider block mb-1.5">Buscar</label>
                         <div class="relative">
-                            <i class="fa-regular fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-muted-soft text-sm"></i>
+                            <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-muted-soft text-sm"></i>
                             <input type="text" x-model="filters.search" placeholder="Bairro, rua ou tipo..."
                                    class="w-full bg-surface-soft rounded-pill pl-10 pr-4 py-3 text-sm border border-transparent focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white transition-soft">
                         </div>
@@ -380,7 +380,7 @@
                         {{-- Contador de fotos --}}
                         @if($imovel->images->count() > 1)
                             <span class="absolute bottom-3 right-3 bg-black/60 backdrop-blur text-white text-xs font-medium rounded-pill px-2.5 py-1 flex items-center gap-1">
-                                <i class="fa-regular fa-camera text-[10px]"></i>
+                                <i class="fa-solid fa-camera text-[10px]"></i>
                                 {{ $imovel->images->count() }}
                             </span>
                         @endif
@@ -392,7 +392,7 @@
                             {{ $imovel->title }}
                         </h3>
                         <p class="text-muted text-xs mt-1.5 flex items-center gap-1">
-                            <i class="fa-regular fa-location-dot text-[10px]"></i>
+                            <i class="fa-solid fa-location-dot text-[10px]"></i>
                             {{ $imovel->neighborhood ?? $imovel->city }}, {{ $imovel->state }}
                         </p>
 
